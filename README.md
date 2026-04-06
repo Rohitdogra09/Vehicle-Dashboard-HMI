@@ -44,11 +44,13 @@ This project is built to demonstrate:
 
 ---
 
-##  Project Structure
+## 📁 Project Structure
 Vehicle-Dashboard-HMI/
-│── src/ # Source code
-│── include/ # Header files
-│── ui/ # UI files (Qt Designer / QML)
-│── resources/ # Images, icons, assets
-│── CMakeLists.txt / .pro
-│── README.md
+│── src/              # Source code  
+│── include/          # Header files  
+│── ui/               # UI files (Qt Designer / QML)  
+│── resources/        # Images, icons, assets  
+│── CMakeLists.txt / .pro  
+│── README.md  
+
+---

@@ -1,0 +1,773 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1313</width>
+    <height>715</height>
+   </rect>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QMainWindow {
+    background-color: #0b0f1a;
+    color: white;
+}
+
+QFrame#topFrame {
+    background-color: #111827;
+    border-radius: 15px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="maximumSize">
+    <size>
+     <width>1313</width>
+     <height>655</height>
+    </size>
+   </property>
+   <widget class="QStackedWidget" name="stackedWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1261</width>
+      <height>661</height>
+     </rect>
+    </property>
+    <property name="currentIndex">
+     <number>0</number>
+    </property>
+    <widget class="QWidget" name="page_0">
+     <property name="maximumSize">
+      <size>
+       <width>1261</width>
+       <height>16777215</height>
+      </size>
+     </property>
+     <layout class="QVBoxLayout" name="verticalLayout_4">
+      <item>
+       <widget class="QFrame" name="topFrame">
+        <property name="enabled">
+         <bool>true</bool>
+        </property>
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>0</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="maximumSize">
+         <size>
+          <width>16777215</width>
+          <height>400</height>
+         </size>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <widget class="QWidget" name="leftPanel" native="true">
+           <layout class="QVBoxLayout" name="verticalLayout">
+            <property name="spacing">
+             <number>10</number>
+            </property>
+            <property name="leftMargin">
+             <number>10</number>
+            </property>
+            <property name="topMargin">
+             <number>10</number>
+            </property>
+            <property name="rightMargin">
+             <number>10</number>
+            </property>
+            <property name="bottomMargin">
+             <number>10</number>
+            </property>
+            <item>
+             <widget class="QWidget" name="widget" native="true">
+              <widget class="QLabel" name="labelDate">
+               <property name="geometry">
+                <rect>
+                 <x>30</x>
+                 <y>40</y>
+                 <width>201</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #00e5ff;
+font-size: 26px;
+font-weight: bold;</string>
+               </property>
+               <property name="text">
+                <string>Aug 02, Mon</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_2" native="true">
+              <property name="enabled">
+               <bool>true</bool>
+              </property>
+              <widget class="QLabel" name="labelTime">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>40</y>
+                 <width>161</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>-1</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #00e5ff;
+font-size: 26px;
+font-weight: bold;</string>
+               </property>
+               <property name="text">
+                <string>9:30 AM</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </widget>
+            </item>
+            <item>
+             <widget class="QWidget" name="widget_3" native="true">
+              <widget class="QLabel" name="labelJourney">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>30</y>
+                 <width>131</width>
+                 <height>51</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>10</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #ffffff;</string>
+               </property>
+               <property name="text">
+                <string>Journey Ahead</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="centerPanel" native="true">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>0</height>
+            </size>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_3">
+            <item>
+             <widget class="QWidget" name="widget_4" native="true">
+              <widget class="QWidget" name="widget_6" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>50</x>
+                 <y>250</y>
+                 <width>271</width>
+                 <height>71</height>
+                </rect>
+               </property>
+               <widget class="QProgressBar" name="batteryBar">
+                <property name="geometry">
+                 <rect>
+                  <x>0</x>
+                  <y>10</y>
+                  <width>261</width>
+                  <height>51</height>
+                 </rect>
+                </property>
+                <property name="styleSheet">
+                 <string notr="true">QProgressBar {
+    border: 2px solid #1f2937;
+    border-radius: 8px;
+    text-align: center;
+    background-color: #111827;
+}
+
+QProgressBar::chunk {
+    background-color: #22c55e;
+    border-radius: 6px;
+}</string>
+                </property>
+                <property name="value">
+                 <number>100</number>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QWidget" name="widget_8" native="true">
+               <property name="geometry">
+                <rect>
+                 <x>-20</x>
+                 <y>0</y>
+                 <width>401</width>
+                 <height>211</height>
+                </rect>
+               </property>
+               <widget class="QLabel" name="labelCar">
+                <property name="geometry">
+                 <rect>
+                  <x>40</x>
+                  <y>10</y>
+                  <width>351</width>
+                  <height>191</height>
+                 </rect>
+                </property>
+                <property name="text">
+                 <string/>
+                </property>
+                <property name="pixmap">
+                 <pixmap>car.png</pixmap>
+                </property>
+                <property name="alignment">
+                 <set>Qt::AlignmentFlag::AlignCenter</set>
+                </property>
+               </widget>
+              </widget>
+              <widget class="QLabel" name="labelStatus">
+               <property name="geometry">
+                <rect>
+                 <x>80</x>
+                 <y>320</y>
+                 <width>191</width>
+                 <height>41</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>19</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #00aaff;</string>
+               </property>
+               <property name="text">
+                <string>Status: OK</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+              <widget class="QLabel" name="labelBattery">
+               <property name="geometry">
+                <rect>
+                 <x>120</x>
+                 <y>220</y>
+                 <width>101</width>
+                 <height>31</height>
+                </rect>
+               </property>
+               <property name="font">
+                <font>
+                 <pointsize>17</pointsize>
+                 <bold>true</bold>
+                </font>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">color: #ffffff;</string>
+               </property>
+               <property name="text">
+                <string>100%</string>
+               </property>
+               <property name="alignment">
+                <set>Qt::AlignmentFlag::AlignCenter</set>
+               </property>
+              </widget>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="rightPanel" native="true">
+           <widget class="QWidget" name="widget_7" native="true">
+            <property name="geometry">
+             <rect>
+              <x>40</x>
+              <y>40</y>
+              <width>381</width>
+              <height>291</height>
+             </rect>
+            </property>
+            <widget class="QLabel" name="labelMap">
+             <property name="geometry">
+              <rect>
+               <x>10</x>
+               <y>-20</y>
+               <width>371</width>
+               <height>291</height>
+              </rect>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>371</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>-1</pointsize>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color: #1f2937;
+border-radius: 12px;
+color: #9ca3af;
+font-size: 14px;</string>
+             </property>
+             <property name="text">
+              <string>MAP</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignmentFlag::AlignCenter</set>
+             </property>
+            </widget>
+           </widget>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+      <item>
+       <widget class="QFrame" name="menuFrame">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QFrame#menuFrame {
+    background-color: #111827;
+    border-radius: 15px;
+}</string>
+        </property>
+        <property name="frameShape">
+         <enum>QFrame::Shape::StyledPanel</enum>
+        </property>
+        <property name="frameShadow">
+         <enum>QFrame::Shadow::Raised</enum>
+        </property>
+        <layout class="QGridLayout" name="gridLayout">
+         <property name="spacing">
+          <number>20</number>
+         </property>
+         <item row="0" column="2">
+          <widget class="QPushButton" name="btnNav">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>Nav</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="btnCamera">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>Cam</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="1">
+          <widget class="QPushButton" name="btnMap">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>Map</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="btnEV">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>EV</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="1">
+          <widget class="QPushButton" name="btnHome">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>Home</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="3">
+          <widget class="QPushButton" name="pushButton_8">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>Setup</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="btnPay">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>Pay</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="3">
+          <widget class="QPushButton" name="btnPhone">
+           <property name="sizePolicy">
+            <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
+             <horstretch>0</horstretch>
+             <verstretch>0</verstretch>
+            </sizepolicy>
+           </property>
+           <property name="minimumSize">
+            <size>
+             <width>120</width>
+             <height>80</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <pointsize>13</pointsize>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton {
+    background-color: #1f2937;
+    border-radius: 12px;
+    color: white;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #374151;
+}</string>
+           </property>
+           <property name="text">
+            <string>Phone</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="page_1">
+     <widget class="QLabel" name="label">
+      <property name="geometry">
+       <rect>
+        <x>510</x>
+        <y>50</y>
+        <width>197</width>
+        <height>40</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>18</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">color: #ffffff;</string>
+      </property>
+      <property name="text">
+       <string>EV Dashboard</string>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QPushButton" name="btnBack">
+      <property name="geometry">
+       <rect>
+        <x>1080</x>
+        <y>40</y>
+        <width>131</width>
+        <height>71</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <pointsize>15</pointsize>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Back</string>
+      </property>
+     </widget>
+    </widget>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1313</width>
+     <height>26</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

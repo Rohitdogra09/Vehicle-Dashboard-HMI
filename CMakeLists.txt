@@ -3,6 +3,9 @@ project(MachineHMI LANGUAGES CXX)
 
 find_package(Qt6 6.5 REQUIRED COMPONENTS Core Widgets)
 
+set(CMAKE_AUTORCC ON)
+
+
 qt_standard_project_setup()
 
 qt_add_executable(MachineHMI
@@ -11,9 +14,10 @@ qt_add_executable(MachineHMI
     mainwindow.cpp
     mainwindow.h
     mainwindow.ui
-    Resource.qrc
-    Resource.qrc
+
+
     evscreen.h evscreen.cpp evscreen.ui
+    resources.qrc
 
 
 )

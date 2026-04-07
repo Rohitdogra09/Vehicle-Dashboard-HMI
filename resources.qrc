@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/images">
+        <file>car.png</file>
+        <file>bmw.jpg</file>
+    </qresource>
+</RCC>

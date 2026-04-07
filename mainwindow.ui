@@ -40,15 +40,15 @@ QFrame#topFrame {
     <property name="geometry">
      <rect>
       <x>0</x>
-      <y>0</y>
-      <width>1261</width>
-      <height>661</height>
+      <y>30</y>
+      <width>1231</width>
+      <height>631</height>
      </rect>
     </property>
     <property name="currentIndex">
      <number>0</number>
     </property>
-    <widget class="QWidget" name="page_0">
+    <widget class="QWidget" name="pageHome">
      <property name="maximumSize">
       <size>
        <width>1261</width>
@@ -111,8 +111,8 @@ QFrame#topFrame {
                 <rect>
                  <x>30</x>
                  <y>40</y>
-                 <width>201</width>
-                 <height>41</height>
+                 <width>231</width>
+                 <height>71</height>
                 </rect>
                </property>
                <property name="font">
@@ -127,7 +127,7 @@ font-size: 26px;
 font-weight: bold;</string>
                </property>
                <property name="text">
-                <string>Aug 02, Mon</string>
+                <string>April 07, Tuesday</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -174,23 +174,23 @@ font-weight: bold;</string>
               <widget class="QLabel" name="labelJourney">
                <property name="geometry">
                 <rect>
-                 <x>80</x>
-                 <y>30</y>
-                 <width>131</width>
-                 <height>51</height>
+                 <x>40</x>
+                 <y>20</y>
+                 <width>201</width>
+                 <height>71</height>
                 </rect>
                </property>
                <property name="font">
                 <font>
-                 <pointsize>10</pointsize>
+                 <pointsize>17</pointsize>
                  <bold>true</bold>
                 </font>
                </property>
                <property name="styleSheet">
-                <string notr="true">color: #ffffff;</string>
+                <string notr="true">color: #55aaff;</string>
                </property>
                <property name="text">
-                <string>Journey Ahead</string>
+                <string>Safe Journey</string>
                </property>
                <property name="alignment">
                 <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -260,17 +260,17 @@ QProgressBar::chunk {
                <widget class="QLabel" name="labelCar">
                 <property name="geometry">
                  <rect>
-                  <x>40</x>
-                  <y>10</y>
-                  <width>351</width>
-                  <height>191</height>
+                  <x>0</x>
+                  <y>0</y>
+                  <width>391</width>
+                  <height>211</height>
                  </rect>
                 </property>
                 <property name="text">
                  <string/>
                 </property>
                 <property name="pixmap">
-                 <pixmap>car.png</pixmap>
+                 <pixmap resource="resources.qrc">:/images/car.png</pixmap>
                 </property>
                 <property name="alignment">
                  <set>Qt::AlignmentFlag::AlignCenter</set>
@@ -343,38 +343,37 @@ QProgressBar::chunk {
               <height>291</height>
              </rect>
             </property>
-            <widget class="QLabel" name="labelMap">
+            <widget class="QWidget" name="mapView" native="true">
+             <property name="geometry">
+              <rect>
+               <x>0</x>
+               <y>100</y>
+               <width>351</width>
+               <height>191</height>
+              </rect>
+             </property>
+            </widget>
+            <widget class="QLineEdit" name="lineSearch">
              <property name="geometry">
               <rect>
                <x>10</x>
-               <y>-20</y>
-               <width>371</width>
-               <height>291</height>
+               <y>20</y>
+               <width>151</width>
+               <height>41</height>
               </rect>
              </property>
-             <property name="minimumSize">
-              <size>
-               <width>371</width>
-               <height>0</height>
-              </size>
-             </property>
-             <property name="font">
-              <font>
-               <pointsize>-1</pointsize>
-               <bold>true</bold>
-              </font>
-             </property>
-             <property name="styleSheet">
-              <string notr="true">background-color: #1f2937;
-border-radius: 12px;
-color: #9ca3af;
-font-size: 14px;</string>
+            </widget>
+            <widget class="QPushButton" name="btnSearch">
+             <property name="geometry">
+              <rect>
+               <x>230</x>
+               <y>30</y>
+               <width>93</width>
+               <height>29</height>
+              </rect>
              </property>
              <property name="text">
-              <string>MAP</string>
-             </property>
-             <property name="alignment">
-              <set>Qt::AlignmentFlag::AlignCenter</set>
+              <string>Back</string>
              </property>
             </widget>
            </widget>
@@ -708,11 +707,262 @@ QPushButton:hover {
       </item>
      </layout>
     </widget>
-    <widget class="QWidget" name="page_1">
+    <widget class="QWidget" name="pagePhone">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="6" column="0">
+       <widget class="QPushButton" name="btnstar">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>*</string>
+        </property>
+       </widget>
+      </item>
+      <item row="0" column="0" colspan="3">
+       <widget class="QLineEdit" name="lineNumber">
+        <property name="font">
+         <font>
+          <pointsize>20</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string> Number : </string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignmentFlag::AlignLeading|Qt::AlignmentFlag::AlignLeft|Qt::AlignmentFlag::AlignVCenter</set>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="2">
+       <widget class="QPushButton" name="btn9">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>9</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="1">
+       <widget class="QPushButton" name="btn8">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>8</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="2">
+       <widget class="QPushButton" name="btn6">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>6</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="0">
+       <widget class="QPushButton" name="btn1">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>1</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="1">
+       <widget class="QPushButton" name="btn2">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>2</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="1">
+       <widget class="QPushButton" name="btn5">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>5</string>
+        </property>
+       </widget>
+      </item>
+      <item row="4" column="0">
+       <widget class="QPushButton" name="btn4">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>4</string>
+        </property>
+       </widget>
+      </item>
+      <item row="5" column="0">
+       <widget class="QPushButton" name="btn7">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>7</string>
+        </property>
+       </widget>
+      </item>
+      <item row="3" column="2">
+       <widget class="QPushButton" name="btn3">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>3</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="1">
+       <widget class="QPushButton" name="btn0">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>0</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="0">
+       <widget class="QPushButton" name="btnCall">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #22c55e;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #16a34a;
+}
+
+QPushButton:pressed {
+    background-color: #15803d;
+}</string>
+        </property>
+        <property name="text">
+         <string>Call</string>
+        </property>
+       </widget>
+      </item>
+      <item row="6" column="2">
+       <widget class="QPushButton" name="btnHash">
+        <property name="font">
+         <font>
+          <pointsize>10</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>#</string>
+        </property>
+       </widget>
+      </item>
+      <item row="7" column="1">
+       <widget class="QPushButton" name="btnEndCall">
+        <property name="font">
+         <font>
+          <pointsize>-1</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="styleSheet">
+         <string notr="true">QPushButton {
+    background-color: #ef4444;
+    color: white;
+    border-radius: 15px;
+    font-weight: bold;
+    font-size: 14px;
+    padding: 10px;
+}
+
+QPushButton:hover {
+    background-color: #dc2626;
+}
+
+QPushButton:pressed {
+    background-color: #991b1b;
+}</string>
+        </property>
+        <property name="text">
+         <string>End Call</string>
+        </property>
+       </widget>
+      </item>
+      <item row="9" column="1">
+       <widget class="QPushButton" name="btnBackPhone">
+        <property name="font">
+         <font>
+          <pointsize>17</pointsize>
+          <bold>true</bold>
+         </font>
+        </property>
+        <property name="text">
+         <string>Back</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+    <widget class="QWidget" name="pageEV">
      <widget class="QLabel" name="label">
       <property name="geometry">
        <rect>
-        <x>510</x>
+        <x>460</x>
         <y>50</y>
         <width>197</width>
         <height>40</height>
@@ -734,24 +984,72 @@ QPushButton:hover {
        <set>Qt::AlignmentFlag::AlignCenter</set>
       </property>
      </widget>
-     <widget class="QPushButton" name="btnBack">
+     <widget class="QLabel" name="label_2">
       <property name="geometry">
        <rect>
-        <x>1080</x>
-        <y>40</y>
-        <width>131</width>
-        <height>71</height>
+        <x>30</x>
+        <y>200</y>
+        <width>1111</width>
+        <height>401</height>
        </rect>
       </property>
-      <property name="font">
-       <font>
-        <pointsize>15</pointsize>
-        <bold>true</bold>
-       </font>
+      <property name="text">
+       <string/>
+      </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/images/car.png</pixmap>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_3">
+      <property name="geometry">
+       <rect>
+        <x>620</x>
+        <y>220</y>
+        <width>561</width>
+        <height>361</height>
+       </rect>
       </property>
       <property name="text">
-       <string>Back</string>
+       <string/>
       </property>
+      <property name="pixmap">
+       <pixmap resource="resources.qrc">:/images/bmw.jpg</pixmap>
+      </property>
+      <property name="alignment">
+       <set>Qt::AlignmentFlag::AlignCenter</set>
+      </property>
+     </widget>
+     <widget class="QWidget" name="">
+      <property name="geometry">
+       <rect>
+        <x>920</x>
+        <y>40</y>
+        <width>95</width>
+        <height>80</height>
+       </rect>
+      </property>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QPushButton" name="btnBack">
+         <property name="font">
+          <font>
+           <pointsize>15</pointsize>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="text">
+          <string>Back</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QPushButton" name="pushButton">
+         <property name="text">
+          <string>PushButton</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
      </widget>
     </widget>
    </widget>
@@ -768,6 +1066,8 @@ QPushButton:hover {
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
  </widget>
- <resources/>
+ <resources>
+  <include location="resources.qrc"/>
+ </resources>
  <connections/>
 </ui>
